@@ -1,176 +1,176 @@
 <!DOCTYPE html>
 <html>
-<head><body bgcolor="grey">
-<title>Show and hide div with JavaScript</title>
-<meta name="viewport" content="width=device-width, initial-scale=1" http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <title>Show and hide div with JavaScript</title>
+    <meta name="viewport" content="width=device-width, i1nitial-scale=1" http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-<style>
-* {
-  box-sizing: border-box;
-}
-.column {
-  float: left;
-  width: 20%;
-  padding: 100px;
-  height: 1500px;
-}
-
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-</style>
-
-<script>
-    function showhide(elementName, buttonName) {
-        var div = document.getElementById(elementName);
-        var button = document.getElementById(buttonName);
-        if ( div.style.display !== "none" ) {
-            div.style.display = "none";
-            button.innerHTML = 'View Timeline';
-        } else {
-            div.style.display = "block";
-            button.innerHTML = 'Hide Timeline';
-        }
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    .column {
+      float: left;
+      width: 20%;
+      padding: 100px;
+      height: 1500px;
     }
 
-    window.onload = function () {
-                          <!-- column 5 -->
-            var div1 = document.getElementById( "hide_show1" );
-            var div2 = document.getElementById( "hide_show2" );
-            var div3 = document.getElementById( "hide_show3" );
-            var div4 = document.getElementById( "hide_show4" );
-            var div5 = document.getElementById( "hide_show5" );
-            var div6 = document.getElementById( "hide_show6" );
-            var div7 = document.getElementById( "hide_show7" );
-            var div8 = document.getElementById( "hide_show8" );
-            var div9 = document.getElementById( "hide_show9" );
-            var div10 = document.getElementById( "hide_show10" );
-            var div11 = document.getElementById( "hide_show11" );
-            var div12 = document.getElementById( "hide_show12" );
-            var div13 = document.getElementById( "hide_show13" );
-            var div14 = document.getElementById( "hide_show14" );
-            var div15 = document.getElementById( "hide_show15" );
-            var div16 = document.getElementById( "hide_show16" );
-            var div17 = document.getElementById( "hide_show17" );
-            var div18 = document.getElementById( "hide_show18" );
-            var div19 = document.getElementById( "hide_show19" );
 
-                        <!-- column 4 -->
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
 
-            var div20 = document.getElementById( "hide_show20" );
-            var div21 = document.getElementById( "hide_show21" );
-            var div22 = document.getElementById( "hide_show22" );
-            var div23 = document.getElementById( "hide_show23" );
-            var div24 = document.getElementById( "hide_show24" );
-            var div25 = document.getElementById( "hide_show25" );
-            var div26 = document.getElementById( "hide_show26" );
-            var div27 = document.getElementById( "hide_show27" );
-            var div28 = document.getElementById( "hide_show28" );
-            var div29 = document.getElementById( "hide_show29" );
-            var div30 = document.getElementById( "hide_show30" );
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
 
-                        <!-- column 3 -->
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
 
-            var div31 = document.getElementById( "hide_show31" );
-            var div32 = document.getElementById( "hide_show32" );
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+    }
 
-                        <!-- column 2 -->
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    </style>
 
-            var div33 = document.getElementById( "hide_show33" );
-            var div34 = document.getElementById( "hide_show34" );
-            var div35 = document.getElementById( "hide_show35" );
-            var div36 = document.getElementById( "hide_show36" );
-
-                        <!-- column 1 -->
-
-            var div37 = document.getElementById( "hide_show37" );
-            var div38 = document.getElementById( "hide_show38" );
-
-                        <!-- column 5 -->
-            div1.style.display = "none";
-            div2.style.display = "none";
-            div3.style.display = "none";
-            div4.style.display = "none";
-            div5.style.display = "none";
-            div6.style.display = "none";
-            div7.style.display = "none";
-            div8.style.display = "none";
-            div9.style.display = "none";
-            div10.style.display = "none";
-            div11.style.display = "none";
-            div12.style.display = "none";
-            div13.style.display = "none";
-            div14.style.display = "none";
-            div15.style.display = "none";
-            div16.style.display = "none";
-            div17.style.display = "none";
-            div18.style.display = "none";
-            div19.style.display = "none";
-
-                        <!-- column 4 -->
-
-            div20.style.display = "none";
-            div21.style.display = "none";
-            div22.style.display = "none";
-            div23.style.display = "none";
-            div24.style.display = "none";
-            div25.style.display = "none";
-            div26.style.display = "none";
-            div27.style.display = "none";
-            div28.style.display = "none";
-            div29.style.display = "none";
-            div30.style.display = "none";
-
-
-                        <!-- column 3 -->
-            div31.style.display = "none";
-            div32.style.display = "none";
-
-                        <!-- column 2 -->
-            div33.style.display = "none";
-            div34.style.display = "none";
-            div35.style.display = "none";
-            div36.style.display = "none";
-
-                        <!-- column 1 -->
-            div37.style.display = "none";
-            div38.style.display = "none";
-
+    <script>
+        function showhide(elementName, buttonName) {
+            var div = document.getElementById(elementName);
+            var button = document.getElementById(buttonName);
+            if ( div.style.display !== "none" ) {
+                div.style.display = "none";
+                button.innerHTML = 'View Timeline';
+            } else {
+                div.style.display = "block";
+                button.innerHTML = 'Hide Timeline';
+            }
         }
-</script>
+
+        window.onload = function () {
+                              <!-- column 5 -->
+                var div1 = document.getElementById( "hide_show1" );
+                var div2 = document.getElementById( "hide_show2" );
+                var div3 = document.getElementById( "hide_show3" );
+                var div4 = document.getElementById( "hide_show4" );
+                var div5 = document.getElementById( "hide_show5" );
+                var div6 = document.getElementById( "hide_show6" );
+                var div7 = document.getElementById( "hide_show7" );
+                var div8 = document.getElementById( "hide_show8" );
+                var div9 = document.getElementById( "hide_show9" );
+                var div10 = document.getElementById( "hide_show10" );
+                var div11 = document.getElementById( "hide_show11" );
+                var div12 = document.getElementById( "hide_show12" );
+                var div13 = document.getElementById( "hide_show13" );
+                var div14 = document.getElementById( "hide_show14" );
+                var div15 = document.getElementById( "hide_show15" );
+                var div16 = document.getElementById( "hide_show16" );
+                var div17 = document.getElementById( "hide_show17" );
+                var div18 = document.getElementById( "hide_show18" );
+                var div19 = document.getElementById( "hide_show19" );
+
+                            <!-- column 4 -->
+
+                var div20 = document.getElementById( "hide_show20" );
+                var div21 = document.getElementById( "hide_show21" );
+                var div22 = document.getElementById( "hide_show22" );
+                var div23 = document.getElementById( "hide_show23" );
+                var div24 = document.getElementById( "hide_show24" );
+                var div25 = document.getElementById( "hide_show25" );
+                var div26 = document.getElementById( "hide_show26" );
+                var div27 = document.getElementById( "hide_show27" );
+                var div28 = document.getElementById( "hide_show28" );
+                var div29 = document.getElementById( "hide_show29" );
+                var div30 = document.getElementById( "hide_show30" );
+
+                            <!-- column 3 -->
+
+                var div31 = document.getElementById( "hide_show31" );
+                var div32 = document.getElementById( "hide_show32" );
+
+                            <!-- column 2 -->
+
+                var div33 = document.getElementById( "hide_show33" );
+                var div34 = document.getElementById( "hide_show34" );
+                var div35 = document.getElementById( "hide_show35" );
+                var div36 = document.getElementById( "hide_show36" );
+
+                            <!-- column 1 -->
+
+                var div37 = document.getElementById( "hide_show37" );
+                var div38 = document.getElementById( "hide_show38" );
+
+                            <!-- column 5 -->
+                div1.style.display = "none";
+                div2.style.display = "none";
+                div3.style.display = "none";
+                div4.style.display = "none";
+                div5.style.display = "none";
+                div6.style.display = "none";
+                div7.style.display = "none";
+                div8.style.display = "none";
+                div9.style.display = "none";
+                div10.style.display = "none";
+                div11.style.display = "none";
+                div12.style.display = "none";
+                div13.style.display = "none";
+                div14.style.display = "none";
+                div15.style.display = "none";
+                div16.style.display = "none";
+                div17.style.display = "none";
+                div18.style.display = "none";
+                div19.style.display = "none";
+
+                            <!-- column 4 -->
+
+                div20.style.display = "none";
+                div21.style.display = "none";
+                div22.style.display = "none";
+                div23.style.display = "none";
+                div24.style.display = "none";
+                div25.style.display = "none";
+                div26.style.display = "none";
+                div27.style.display = "none";
+                div28.style.display = "none";
+                div29.style.display = "none";
+                div30.style.display = "none";
+
+
+                            <!-- column 3 -->
+                div31.style.display = "none";
+                div32.style.display = "none";
+
+                            <!-- column 2 -->
+                div33.style.display = "none";
+                div34.style.display = "none";
+                div35.style.display = "none";
+                div36.style.display = "none";
+
+                            <!-- column 1 -->
+                div37.style.display = "none";
+                div38.style.display = "none";
+
+            }
+    </script>
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </head>
-<body>
+<body bgcolor="grey">
 
 <h2 align="center">BWTI - BROOD WAR TWITTER INIATIVE</h2>
 <p align="center">SMASH those follow buttons!</p>
