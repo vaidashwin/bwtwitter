@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html>
+<head><body bgcolor="grey">
+<title>Show and hide div with JavaScript</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 20%;
+  padding: 100px;
+  height: 1500px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+
+<script>
+    function showhide(elementName, buttonName) {
+        var div = document.getElementById(elementName);
+        var button = document.getElementById(buttonName);
+        if ( div.style.display !== "none" ) {
+            div.style.display = "none";
+            button.innerHTML = 'View Timeline';
+        } else {
+            div.style.display = "block";
+            button.innerHTML = 'Hide Timeline';
+        }
+    }
+
+    window.onload = function () {
+                          <!-- column 5 -->
+            var div1 = document.getElementById( "hide_show1" );
+            var div2 = document.getElementById( "hide_show2" );
+            var div3 = document.getElementById( "hide_show3" );
+            var div4 = document.getElementById( "hide_show4" );
+            var div5 = document.getElementById( "hide_show5" );
+            var div6 = document.getElementById( "hide_show6" );
+            var div7 = document.getElementById( "hide_show7" );
+            var div8 = document.getElementById( "hide_show8" );
+            var div9 = document.getElementById( "hide_show9" );
+            var div10 = document.getElementById( "hide_show10" );
+            var div11 = document.getElementById( "hide_show11" );
+            var div12 = document.getElementById( "hide_show12" );
+            var div13 = document.getElementById( "hide_show13" );
+            var div14 = document.getElementById( "hide_show14" );
+            var div15 = document.getElementById( "hide_show15" );
+            var div16 = document.getElementById( "hide_show16" );
+            var div17 = document.getElementById( "hide_show17" );
+            var div18 = document.getElementById( "hide_show18" );
+            var div19 = document.getElementById( "hide_show19" );
+
+                        <!-- column 4 -->
+
+            var div20 = document.getElementById( "hide_show20" );
+            var div21 = document.getElementById( "hide_show21" );
+            var div22 = document.getElementById( "hide_show22" );
+            var div23 = document.getElementById( "hide_show23" );
+            var div24 = document.getElementById( "hide_show24" );
+            var div25 = document.getElementById( "hide_show25" );
+            var div26 = document.getElementById( "hide_show26" );
+            var div27 = document.getElementById( "hide_show27" );
+            var div28 = document.getElementById( "hide_show28" );
+            var div29 = document.getElementById( "hide_show29" );
+            var div30 = document.getElementById( "hide_show30" );
+
+                        <!-- column 3 -->
+
+            var div31 = document.getElementById( "hide_show31" );
+            var div32 = document.getElementById( "hide_show32" );
+
+                        <!-- column 2 -->
+
+            var div33 = document.getElementById( "hide_show33" );
+            var div34 = document.getElementById( "hide_show34" );
+            var div35 = document.getElementById( "hide_show35" );
+            var div36 = document.getElementById( "hide_show36" );
+
+                        <!-- column 1 -->
+
+            var div37 = document.getElementById( "hide_show37" );
+            var div38 = document.getElementById( "hide_show38" );
+
+                        <!-- column 5 -->
+            div1.style.display = "none";
+            div2.style.display = "none";
+            div3.style.display = "none";
+            div4.style.display = "none";
+            div5.style.display = "none";
+            div6.style.display = "none";
+            div7.style.display = "none";
+            div8.style.display = "none";
+            div9.style.display = "none";
+            div10.style.display = "none";
+            div11.style.display = "none";
+            div12.style.display = "none";
+            div13.style.display = "none";
+            div14.style.display = "none";
+            div15.style.display = "none";
+            div16.style.display = "none";
+            div17.style.display = "none";
+            div18.style.display = "none";
+            div19.style.display = "none";
+
+                        <!-- column 4 -->
+
+            div20.style.display = "none";
+            div21.style.display = "none";
+            div22.style.display = "none";
+            div23.style.display = "none";
+            div24.style.display = "none";
+            div25.style.display = "none";
+            div26.style.display = "none";
+            div27.style.display = "none";
+            div28.style.display = "none";
+            div29.style.display = "none";
+            div30.style.display = "none";
+
+
+                        <!-- column 3 -->
+            div31.style.display = "none";
+            div32.style.display = "none";
+
+                        <!-- column 2 -->
+            div33.style.display = "none";
+            div34.style.display = "none";
+            div35.style.display = "none";
+            div36.style.display = "none";
+
+                        <!-- column 1 -->
+            div37.style.display = "none";
+            div38.style.display = "none";
+
+        }
+</script>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</head>
+<body>
+
+<h2 align="center">BWTI - BROOD WAR TWITTER INIATIVE</h2>
+<p align="center">SMASH those follow buttons!</p>
+
+<div class="row">
+    <div class="column" style="background-color:#aaa;">
+        <h2>Official Blizzard:</h2>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/StarCraft?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @StarCraft</a>
+
+        <br/>
+
+        <button id="showHideButton37" onclick="showhide('hide_show37', 'showHideButton37')">View Timeline</button>
+
+        <div id="hide_show37">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/StarCraft?ref_src=twsrc%5Etfw">Tweets by StarCraft</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/esportstarcraft?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @esportstarcraft</a>
+
+        <br/>
+
+        <button id="showHideButton38" onclick="showhide('hide_show38', 'showHideButton38')">View Timeline</button>
+
+        <div id="hide_show38">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/esportstarcraft?ref_src=twsrc%5Etfw">Tweets by esportstarcraft</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+    </div>
+    <div class="column" style="background-color:#bbb;">
+        <h2>Tournaments:</h2>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/STPLTV?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @STPLTV</a>
+
+        <br/>
+
+        <button id="showHideButton33" onclick="showhide('hide_show33', 'showHideButton33')">View Timeline</button>
+
+        <div id="hide_show33">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/STPLTV?ref_src=twsrc%5Etfw">Tweets by STPLTV</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/BombasticStar?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @BombasticStar</a>
+
+        <br/>
+
+        <button id="showHideButton34" onclick="showhide('hide_show34', 'showHideButton34')">View Timeline</button>
+
+        <div id="hide_show34">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/BombasticStar?ref_src=twsrc%5Etfw">Tweets by BombasticStar</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/cslBW?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @cslBW</a>
+
+        <br/>
+
+        <button id="showHideButton35" onclick="showhide('hide_show35', 'showHideButton35')">View Timeline</button>
+
+        <div id="hide_show35">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/cslBW?ref_src=twsrc%5Etfw">Tweets by cslBW</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/bwclde?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @bwclde</a>
+
+        <br/>
+
+        <button id="showHideButton36" onclick="showhide('hide_show36', 'showHideButton36')">View Timeline</button>
+
+        <div id="hide_show36">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/bwclde?ref_src=twsrc%5Etfw">Tweets by bwclde</a>
+          </div>
+        </div>
+
+        <br/>
+
+
+    </div>
+
+    <div class="column" style="background-color:#ccc;">
+        <h2>SC:R Developers:</h2>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/MattShermanSC?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @MattShermanSC</a>
+
+        <br/>
+
+        <button id="showHideButton31" onclick="showhide('hide_show31', 'showHideButton31')">View Timeline</button>
+
+        <div id="hide_show31">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/MattShermanSC?ref_src=twsrc%5Etfw">Tweets by MattShermanSC</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/GrantTheAnt?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @GrantTheAnt</a>
+
+        <br/>
+
+        <button id="showHideButton32" onclick="showhide('hide_show32', 'showHideButton32')">View Timeline</button>
+
+        <div id="hide_show32">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/GrantTheAnt?ref_src=twsrc%5Etfw">Tweets by GrantTheAnt</a>
+          </div>
+        </div>
+
+        <br/>
+
+    </div>
+
+    <div class="column" style="background-color:#ddd;">
+        <h2>Casters:</h2>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/Artosis?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @Artosis</a>
+
+        <br/>
+
+        <button id="showHideButton20" onclick="showhide('hide_show20', 'showHideButton20')">View Timeline</button>
+
+        <div id="hide_show20">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/Artosis?ref_src=twsrc%5Etfw">Tweets by Artosis</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/Qikzsd?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @Qikzsd</a>
+
+        <br/>
+
+        <button id="showHideButton21" onclick="showhide('hide_show21', 'showHideButton21')">View Timeline</button>
+
+        <div id="hide_show21">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/Qikzsd?ref_src=twsrc%5Etfw">Tweets by Qikzsd</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/RapidCasting?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @RapidCasting</a>
+
+        <br/>
+
+        <button id="showHideButton22" onclick="showhide('hide_show22', 'showHideButton22')">View Timeline</button>
+
+        <div id="hide_show22">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/RapidCasting?ref_src=twsrc%5Etfw">Tweets by RapidCasting</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/Schamtoo?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @Schamtoo</a>
+
+        <br/>
+
+        <button id="showHideButton23" onclick="showhide('hide_show23', 'showHideButton23')">View Timeline</button>
+
+        <div id="hide_show23">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/Schamtoo?ref_src=twsrc%5Etfw">Tweets by Schamtoo</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/djaeyun?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @djaeyun</a>
+
+        <br/>
+
+        <button id="showHideButton24" onclick="showhide('hide_show24', 'showHideButton24')">View Timeline</button>
+
+        <div id="hide_show24">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/djaeyun?ref_src=twsrc%5Etfw">Tweets by djaeyun</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/ZZZeroPL?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @ZZZeroPL</a>
+
+        <br/>
+
+        <button id="showHideButton25" onclick="showhide('hide_show25', 'showHideButton25')">View Timeline</button>
+
+        <div id="hide_show25">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/ZZZeroPL?ref_src=twsrc%5Etfw">Tweets by ZZZeroPL</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/thenyoken?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @thenyoken</a>
+
+        <br/>
+
+        <button id="showHideButton26" onclick="showhide('hide_show26', 'showHideButton26')">View Timeline</button>
+
+        <div id="hide_show26">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/thenyoken?ref_src=twsrc%5Etfw">Tweets by thenyoken</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/Gorgonoth1?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @Gorgonoth1</a>
+
+        <br/>
+
+        <button id="showHideButton27" onclick="showhide('hide_show27', 'showHideButton27')">View Timeline</button>
+
+        <div id="hide_show27">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/Gorgonoth1?ref_src=twsrc%5Etfw">Tweets by Gorgonoth1</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/Vincent4TV?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @Vincent4TV</a>
+
+        <br/>
+
+        <button id="showHideButton28" onclick="showhide('hide_show28', 'showHideButton28')">View Timeline</button>
+
+        <div id="hide_show28">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/Vincent4TV?ref_src=twsrc%5Etfw">Tweets by Vincent4TV</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/GTRH1H?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @GTR1H</a>
+
+        <br/>
+
+        <button id="showHideButton29" onclick="showhide('hide_show29', 'showHideButton29')">View Timeline</button>
+
+        <div id="hide_show29">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/GTR1H?ref_src=twsrc%5Etfw">Tweets by GTR1H</a>
+          </div>
+        </div>
+
+        <br/>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/Docholiday_tv?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @docholiday_tv</a>
+
+        <br/>
+
+        <button id="showHideButton30" onclick="showhide('hide_show30', 'showHideButton30')">View Timeline</button>
+
+        <div id="hide_show30">
+          <div>
+            <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/docholiday_tv?ref_src=twsrc%5Etfw">Tweets by docholiday_tv</a>
+          </div>
+        </div>
+
+        <br/>
+
+    </div>
+    <div class="column" style="background-color:#EEE;">
+        <h2>Players:</h2>
+
+        <!-- First button -->
+
+        <a href="https://twitter.com/Future_sc?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @Future_sc</a>
+
+        <br/>
+
+        <button id="showHideButton1" onclick="showhide('hide_show1', 'showHideButton1')">View Timeline</button>
+
+        <div id="hide_show1">
+            <div>
+                <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/Future_sc?ref_src=twsrc%5Etfw">Tweets by Future_sc</a>
+            </div>
+        </div>
+
+        <br/>
+
+        <!-- Second button -->
+
+        <a href="https://twitter.com/eOnzErG?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="true">Follow @eOnzErG</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <br/>
+
+        <button id="showHideButton2" onclick="showhide('hide_show2', 'showHideButton2')">View Timeline</button>
+
+        <div id="hide_show2">
+            <div>
+                <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/eOnzErG?ref_src=twsrc%5Etfw">Tweets by Future_sc</a>
+            </div>
+        </div>
+
+        <!-- Third button -->
+
+        <a href="https://twitter.com/80smullet?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @eOnzErG</a>
+
+        <br/>
+
+        <button id="showHideButton3" onclick="showhide('hide_show3', 'showHideButton3')">View Timeline</button>
+
+        <div id="hide_show3">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/80smullet?ref_src=twsrc%5Etfw">Tweets by 80smullet</a>
+            </div>
+        </div>
+
+        <!-- Fourth button -->
+
+        <a href="https://twitter.com/Mongeryxo?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @Future_sc</a>
+
+        <br/>
+
+        <button id="showHideButton4" onclick="showhide('hide_show4', 'showHideButton4')">View Timeline</button>
+
+        <div id="hide_show4">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/Mongeryxo?ref_src=twsrc%5Etfw">Tweets by Mongeryxo</a>
+            </div>
+        </div>
+
+        <!-- Fifth button -->
+
+        <a href="https://twitter.com/gypsym93?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @Future_sc</a>
+
+        <br/>
+
+        <button id="showHideButton5" onclick="showhide('hide_show5', 'showHideButton5')">View Timeline</button>
+
+        <div id="hide_show5">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/gypsym93?ref_src=twsrc%5Etfw">Tweets by gypsym93</a>
+            </div>
+        </div>
+
+        <!-- Sixth button -->
+
+        <a href="https://twitter.com/UltraTerran?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @Future_sc</a>
+
+        <br/>
+
+        <button id="showHideButton6" onclick="showhide('hide_show6', 'showHideButton6')">View Timeline</button>
+
+        <div id="hide_show6">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/UltraTerran?ref_src=twsrc%5Etfw">Tweets by UltraTerran</a>
+            </div>
+        </div>
+
+        <!-- Seventh button -->
+
+        <a href="https://twitter.com/Kareflash?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @Future_sc</a>
+
+        <br/>
+
+        <button id="showHideButton7" onclick="showhide('hide_show7', 'showHideButton7')">View Timeline</button>
+
+        <div id="hide_show7">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/Kareflash?ref_src=twsrc%5Etfw">Tweets by Kareflash</a>
+            </div>
+        </div>
+
+        <!-- Eighth button -->
+
+        <a href="https://twitter.com/Herbm0n?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @Herbm0n</a>
+
+        <br/>
+
+        <button id="showHideButton8" onclick="showhide('hide_show8', 'showHideButton8')">View Timeline</button>
+
+        <div id="hide_show8">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/Herbm0n?ref_src=twsrc%5Etfw">Tweets by Herbm0n</a>
+            </div>
+        </div>
+
+        <!-- Ninth button -->
+
+        <a href="https://twitter.com/iamNaugrim?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @iamNaugrim</a>
+
+        <br/>
+
+        <button id="showHideButton9" onclick="showhide('hide_show9', 'showHideButton9')">View Timeline</button>
+
+        <div id="hide_show9">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/iamNaugrim?ref_src=twsrc%5Etfw">Tweets by iamNaugrim</a>
+            </div>
+        </div>
+
+        <!-- Tenth button -->
+
+        <a href="https://twitter.com/KenZyBW?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @KenZyBW</a>
+
+        <br/>
+
+        <button id="showHideButton10" onclick="showhide('hide_show10', 'showHideButton10')">View Timeline</button>
+
+        <div id="hide_show10">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/KenZyBW?ref_src=twsrc%5Etfw">Tweets by KenZyBW</a>
+            </div>
+        </div>
+
+        <!-- Eleventh button -->
+
+        <a href="https://twitter.com/MachineUSA?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @MachineUSA</a>
+
+        <br/>
+
+        <button id="showHideButton11" onclick="showhide('hide_show11', 'showHideButton11')">View Timeline</button>
+
+        <div id="hide_show11">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/MachineUSA?ref_src=twsrc%5Etfw">Tweets by MachineUSA</a>
+            </div>
+        </div>
+
+        <!-- Twevelth button -->
+
+        <a href="https://twitter.com/iamTT1?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @iamTT1</a>
+
+        <br/>
+
+        <button id="showHideButton12" onclick="showhide('hide_show12', 'showHideButton12')">View Timeline</button>
+
+        <div id="hide_show12">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/iamTT1?ref_src=twsrc%5Etfw">Tweets by iamTT1</a>
+            </div>
+        </div>
+
+        <!-- Thirteenth button -->
+
+        <a href="https://twitter.com/BLinDRawR?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @BLinDRawR</a>
+
+        <br/>
+
+        <button id="showHideButton13" onclick="showhide('hide_show13', 'showHideButton13')">View Timeline</button>
+
+        <div id="hide_show13">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/BLinDRawR?ref_src=twsrc%5Etfw">Tweets by BLinDRawR</a>
+            </div>
+        </div>
+
+        <!-- Fourteenth button -->
+
+        <a href="https://twitter.com/SC_Ty2?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @SC_Ty2</a>
+
+        <br/>
+
+        <button id="showHideButton14" onclick="showhide('hide_show14', 'showHideButton14')">View Timeline</button>
+
+        <div id="hide_show14">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/SC_Ty2?ref_src=twsrc%5Etfw">Tweets by SC_Ty2</a>
+            </div>
+        </div>
+
+        <!-- Fifteenth button -->
+
+        <a href="https://twitter.com/chris_BW_?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @chris_BW_</a>
+
+        <br/>
+
+        <button id="showHideButton15" onclick="showhide('hide_show15', 'showHideButton15')">View Timeline</button>
+
+        <div id="hide_show15">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/chris_BW_?ref_src=twsrc%5Etfw">Tweets by chris_BW_</a>
+            </div>
+        </div>
+
+        <!-- Sixteenth button -->
+
+        <a href="https://twitter.com/HubertNeutron?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @HubertNeutron</a>
+
+        <br/>
+
+        <button id="showHideButton16" onclick="showhide('hide_show16', 'showHideButton16')">View Timeline</button>
+
+        <div id="hide_show16">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/HubertNeutron?ref_src=twsrc%5Etfw">Tweets by HubertNeutron</a>
+            </div>
+        </div>
+
+        <!-- Seventeenth button -->
+
+        <a href="https://twitter.com/faustypoo?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @faustypoo</a>
+
+        <br/>
+
+        <button id="showHideButton17" onclick="showhide('hide_show17', 'showHideButton17')">View Timeline</button>
+
+        <div id="hide_show17">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/faustypoo?ref_src=twsrc%5Etfw">Tweets by faustypoo</a>
+            </div>
+        </div>
+
+        <!-- Eighteenth button -->
+
+        <a href="https://twitter.com/ZiggySCPG?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @Future_sc</a>
+
+        <br/>
+
+        <button id="showHideButton18" onclick="showhide('hide_show18', 'showHideButton18')">View Timeline</button>
+
+        <div id="hide_show18">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/ZiggySCPG?ref_src=twsrc%5Etfw">Tweets by Future_sc</a>
+            </div>
+        </div>
+
+        <p>Teams:</p>
+
+        <!-- Nineteenth button -->
+
+        <a href="https://twitter.com/irk_team?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="small" data-show-count="true">Follow @irk_team</a>
+
+        <br/>
+
+        <button id="showHideButton19" onclick="showhide('hide_show19', 'showHideButton19')">View Timeline</button>
+
+        <div id="hide_show19">
+            <div>
+                 <a class="twitter-timeline" data-width="600" data-height="500" data-theme="dark" data-link-color="#19CF86" href="https://twitter.com/irk_team?ref_src=twsrc%5Etfw">Tweets by irk_team</a>
+            </div>
+        </div>
+              <br/>
+        </div>
+      </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
