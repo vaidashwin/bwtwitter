@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <title>Brood War Twitter Initiative</title>
+    <meta name="viewport" content="width=device-width, i1nitial-scale=1" http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" ype="text/css" href="{% static 'style.css' %}"/>
+</head>
+
+  <body bgcolor="grey">
+    <h2 align="center">BWTI - BROOD WAR TWITTER INIATIVE</h2>
+    <p align="center">SMASH those follow buttons!</p>
+
+    <div>
+      {% for tweet in tweeters.values %}
+      <div>
+        {{tweet | safe}}
+        <a href="https://twitter.com/{{tweeter}}"
+          class="twitter-follow-button"
+          data-size="small"
+          data-show-count="true">Follow @{{tweet.user.screen_name}}</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+      {% endfor %}
+    </div>
+
+  </body>
+</html>
