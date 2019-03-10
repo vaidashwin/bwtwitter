@@ -10,4 +10,4 @@ A site to help people get hooked up on twitter with various Brood War personalit
 5) `cd` into `bwtwitter/bwti` and run `python manage.py makemigrations`
 6) Run `python manage.py sqlmigrate follow 0001`
 7) Run `python manage.py migrate`
-8) Everything should be good, run `python manage.py runserver` to start it up and hit it on `localhost:8000`
+8) Everything should be good, run `python manage.py runserver` to start it up and hit it on `localhost:8000/follow`
