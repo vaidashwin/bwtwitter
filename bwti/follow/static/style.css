@@ -1,13 +1,24 @@
-* {
-  box-sizing: border-box;
-}
-.column {
-  float: left;
-  width: 20%;
-  padding: 100px;
-  height: 1500px;
+html, body {
+  height: 100%;
 }
 
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.column {
+  display: table-cell;
+  padding: 7px;
+  width: 20%;
+  height: stretch;
+}
+
+.col1 { background-color: #aaa; }
+.col2 { background-color: #bbb; }
+.col3 { background-color: #ccc; }
+.col4 { background-color: #ddd; }
+.col5 { background-color: #eee; }
 
 .row:after {
   content: "";

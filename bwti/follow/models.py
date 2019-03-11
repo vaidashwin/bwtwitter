@@ -14,13 +14,13 @@ class BWTweeter(models.Model):
   SCR_DEV = 'DV'
   CASTER = 'CR'
   PLAYER = 'PL'
-  TIER_CHOICES = (
+  TIER_CHOICES = [
     (BLIZZARD, "Official Blizzard"),
     (TOURNAMENT, "Tournaments"),
     (SCR_DEV, "SC:R Developers"),
     (CASTER, "Casters"),
     (PLAYER, "Players")
-  )
+  ]
   tier = models.CharField(
     max_length = 2,
     choices = TIER_CHOICES,

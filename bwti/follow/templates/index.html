@@ -11,15 +11,13 @@
     <h2 align="center">BWTI - BROOD WAR TWITTER INIATIVE</h2>
     <p align="center">SMASH those follow buttons!</p>
 
-    <div>
-      {% for tweet in tweeters.values %}
-      <div>
-        {{tweet | safe}}
-        <a href="https://twitter.com/{{tweeter}}"
-          class="twitter-follow-button"
-          data-size="small"
-          data-show-count="true">Follow @{{tweet.user.screen_name}}</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <div class="wrapper">
+      {% for tier, tweets in grouped_tweets.items %}
+      <div class="column col{{ forloop.counter }}">
+        <h2 align="center">{{ tier }}</h2>
+        {% for tweet in tweets %}
+          {{tweet | safe}}
+        {% endfor %}
       </div>
       {% endfor %}
     </div>

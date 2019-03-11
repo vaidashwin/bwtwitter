@@ -14,18 +14,21 @@ def index(request):
     settings.APP_SECRET
   )
 
-  data = {}
+  tweet_data = {}
+
+  header_map = dict(BWTweeter.TIER_CHOICES)
+  for tier_name in header_map.values():
+    tweet_data[tier_name] = []
 
   for tweeter in all_twitters:
-      embed = twitter.get_oembed_tweet(
-        url = 'https://twitter.com/%s' % tweeter.twitter_un,
-        maxwidth = 400,
-        maxheight = 200,
-        chrome = 'noheader nofooter',
-        limit = 3,
-        dnt = True
-      )
-      data[tweeter.twitter_un] = embed['html']
+    tweet_data[header_map[tweeter.tier]].append(twitter.get_oembed_tweet(
+      url = 'https://twitter.com/%s' % tweeter.twitter_un,
+      chrome = 'noheader nofooter',
+      maxheight = 300,
+      dnt = True
+    )['html'])
 
   template = loader.get_template('index.html')
-  return HttpResponse(template.render({'tweeters': data}, request))
+  return HttpResponse(template.render({
+    'grouped_tweets': tweet_data
+  }, request))
