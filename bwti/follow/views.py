@@ -17,9 +17,14 @@ def index(request):
   data = {}
 
   for tweeter in all_twitters:
-      tweet = twitter.get_user_timeline(screen_name=tweeter.twitter_un)[0]
-      embed_url = tweet['entities']['urls'][0]['expanded_url'].replace("/i", "")
-      embed = twitter.get_oembed_tweet(url=embed_url, maxwidth=280)
+      embed = twitter.get_oembed_tweet(
+        url = 'https://twitter.com/%s' % tweeter.twitter_un,
+        maxwidth = 400,
+        maxheight = 200,
+        chrome = 'noheader nofooter',
+        limit = 3,
+        dnt = True
+      )
       data[tweeter.twitter_un] = embed['html']
 
   template = loader.get_template('index.html')
