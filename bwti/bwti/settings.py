@@ -17,7 +17,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 ADMINS = (
     ('des', 'vaidashwin@gmail.com'),
-    ('80smullet', 'placeholder@placeholder.com')
+    ('80smullet', 'tom_fummel@hotmail.com')
 )
 
 
