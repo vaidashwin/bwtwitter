@@ -132,6 +132,6 @@ STATIC_URL = './static/'
 STATIC_ROOT = '/app/bwtwitter/bwti/static/'
 
 API_KEY = "8n9SrgUkKSpvLlFmJoYnwthBW"
-API_SECRET = "dMSEbplBNZdvtErA1G2S2DIduc3iBxsA5WMwOQkhhzW01aK4Am"
+API_SECRET = os.environ.get('API_SECRET', '')
 APP_KEY = "1019213801558863872-k806oZN57qPNr7NBJydiqYHhuYuOKI"
-APP_SECRET = "LHLBQMi1HfIH2QKeKzfGMQKlVm8yFFQaP3ctvrLtcuz8V"
+APP_SECRET = os.environ.get('APP_SECRET', '')
