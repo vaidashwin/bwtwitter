@@ -31,7 +31,7 @@ SECRET_KEY = '0&05ng99%_du3n=322svnx7habzg0qhm)r75mj&si)9@qo*b74'
 DEBUG = False
 TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -82,8 +82,12 @@ WSGI_APPLICATION = 'bwti.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.environ.get('BWTI_DB_NAME, ''),
+        'USER': os.environ.get('BWTI_DB_USER', ''),
+        'PASSWORD': os.environ.get('BWTI_DB_PASS', ''),
+	'HOST': os.environ.get('BWTI_DB_HOST', ''),
+	'PORT': '5432',
     }
 }
 
