@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'bwti.wsgi.application'
 DATABASES = {
     'default': {
 	'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.environ.get('BWTI_DB_NAME, ''),
+        'NAME': os.environ.get('BWTI_DB_NAME', ''),
         'USER': os.environ.get('BWTI_DB_USER', ''),
         'PASSWORD': os.environ.get('BWTI_DB_PASS', ''),
 	'HOST': os.environ.get('BWTI_DB_HOST', ''),
