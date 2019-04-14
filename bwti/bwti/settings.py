@@ -11,6 +11,12 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import socket
+
+try:
+    TWITTER_REDIRECT = socket.gethostname() + '/bwti/follow'
+except:
+    TWITTER_REDIRECT = 'localhost:8000/follow'
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -135,3 +141,5 @@ API_KEY = "8n9SrgUkKSpvLlFmJoYnwthBW"
 API_SECRET = os.environ.get('API_SECRET', '')
 APP_KEY = "1019213801558863872-k806oZN57qPNr7NBJydiqYHhuYuOKI"
 APP_SECRET = os.environ.get('APP_SECRET', '')
+
+SESSION_ENGINE = 'django.contrib.sessions.backends.file'

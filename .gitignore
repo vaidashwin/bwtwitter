@@ -116,3 +116,6 @@ dmypy.json
 .pyre/
 
 *.sqlite3
+
+/bwti/static/
+*.db
